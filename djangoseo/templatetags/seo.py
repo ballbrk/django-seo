@@ -44,6 +44,7 @@ class MetadataNode(template.Node):
 
         # If a language is given, pass that on
         if self.language:
+
             kwargs['language'] = self.language.resolve(context)
 
         metadata = None
